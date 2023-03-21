@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push
+
+jobs:
+  test:
+    runs-on: macos-latest
+    - name: Install VTest
+      run: |
+        uname -a
+        curl 'https://api.ipify.org/?format=json'
+        port install dmidecode
+        dmidecode
