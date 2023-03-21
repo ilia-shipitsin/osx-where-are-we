@@ -12,6 +12,7 @@ jobs:
         uname -a
         curl 'https://api.ipify.org/?format=json'
         git clone https://github.com/cavaliercoder/dmidecode-osx
+        cd dmidecode-osx
         make
         ./dmidecode
 
